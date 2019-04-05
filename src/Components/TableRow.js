@@ -12,6 +12,7 @@ class TableRow extends Component {
         axios.get('http://localhost:4000/artist/delete/'+this.props.obj._id)
             .then(console.log('Deleted'))
             .catch(err => console.log(err))
+            window.location.reload();
     }
   render() {
     return (
