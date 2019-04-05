@@ -29,11 +29,15 @@ const data = [
     name: 'Page G', uv: 3490, pv: 4300, amt: 2100,
   },
 ];
+<<<<<<< HEAD
 */
+=======
+>>>>>>> 4c7dd07448ff6e473c5c4a1f855b3d04657384a4
 
 export default class Example extends PureComponent {
   static jsfiddleUrl = 'https://jsfiddle.net/alidingling/90v76x08/';
 
+<<<<<<< HEAD
   state = {
     artists: []
   }
@@ -46,12 +50,18 @@ export default class Example extends PureComponent {
         this.setState({ artists });
       })
   }
+=======
+>>>>>>> 4c7dd07448ff6e473c5c4a1f855b3d04657384a4
   render() {
     return (
       <div className="responsive-column">
         <ResponsiveContainer height='100%' width='100%'>
           <BarChart
+<<<<<<< HEAD
             data={this.state.artists}
+=======
+            data={data}
+>>>>>>> 4c7dd07448ff6e473c5c4a1f855b3d04657384a4
             margin={{
               top: 40, right: 30, left: 20, bottom: 5,
             }}
@@ -61,7 +71,12 @@ export default class Example extends PureComponent {
             <YAxis />
             <Tooltip />
             <Legend />
+<<<<<<< HEAD
             <Bar dataKey="followers" stackId="a" fill="#8884d8" />
+=======
+            <Bar dataKey="pv" stackId="a" fill="#8884d8" />
+            <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
+>>>>>>> 4c7dd07448ff6e473c5c4a1f855b3d04657384a4
           </BarChart>
         </ResponsiveContainer>
       </div>

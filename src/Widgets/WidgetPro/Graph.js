@@ -30,6 +30,7 @@ const data = [
   },
 ];
 
+<<<<<<< HEAD
 */
 export default class Example extends PureComponent {
   static jsfiddleUrl = 'https://jsfiddle.net/alidingling/c1rLyqj1/';
@@ -47,12 +48,21 @@ export default class Example extends PureComponent {
       })
   }
 
+=======
+export default class Example extends PureComponent {
+  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/c1rLyqj1/';
+
+>>>>>>> 4c7dd07448ff6e473c5c4a1f855b3d04657384a4
   render() {
     return (
       <div className="responsive-graph">
         <ResponsiveContainer height='100%' width='100%'>
           <AreaChart
+<<<<<<< HEAD
             data={this.state.artists}
+=======
+            data={data}
+>>>>>>> 4c7dd07448ff6e473c5c4a1f855b3d04657384a4
             margin={{
               top: 30, right: 30, left: 0, bottom: 0,
             }}
@@ -61,7 +71,13 @@ export default class Example extends PureComponent {
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
+<<<<<<< HEAD
             <Area type="monotone" dataKey="followers" stackId="a" stroke="#8884d8" fill="#8884d8" />
+=======
+            <Area type="monotone" dataKey="uv" stackId="1" stroke="#8884d8" fill="#8884d8" />
+            <Area type="monotone" dataKey="pv" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
+            <Area type="monotone" dataKey="amt" stackId="1" stroke="#ffc658" fill="#ffc658" />
+>>>>>>> 4c7dd07448ff6e473c5c4a1f855b3d04657384a4
           </AreaChart>
         </ResponsiveContainer>
       </div>

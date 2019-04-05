@@ -45,8 +45,13 @@ export default class Example extends PureComponent {
       <div className="responsive-pie">
         <ResponsiveContainer height='100%' width='100%'>
           <PieChart>
+<<<<<<< HEAD
             <Pie data={this.state.tracks} dataKey="likes" cx="50%" cy="50%" outerRadius="35%" fill="#8884d8" />
             <Pie data={this.state.tracks} dataKey="listenings" cx="50%" cy="50%" innerRadius="45%" outerRadius="50%" fill="#82ca9d" label />
+=======
+            <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius="35%" fill="#8884d8" />
+            <Pie data={data02} dataKey="value" cx="50%" cy="50%" innerRadius="45%" outerRadius="50%" fill="#82ca9d" label />
+>>>>>>> 4c7dd07448ff6e473c5c4a1f855b3d04657384a4
           </PieChart>
         </ResponsiveContainer>
       </div>
