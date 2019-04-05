@@ -65,12 +65,13 @@ export default class Edit extends Component {
         .then(res => console.log(res.data));
     
     this.props.history.push('/index');
+    window.location.reload();
   }
  
   render() {
     return (
         <div style={{ marginTop: 10 }}>
-            <h3 align="center">Update Business</h3>
+            <h3 align="center">Update Artist</h3>
             <form onSubmit={this.onSubmit}>
                 <div className="form-group">
                     <label>Artist Name:  </label>
@@ -107,7 +108,7 @@ export default class Edit extends Component {
                 </div>
                 <div className="form-group">
                     <input type="submit" 
-                      value="Update Business" 
+                      value="Update Artist" 
                       className="btn btn-primary"/>
                 </div>
             </form>

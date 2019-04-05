@@ -1,0 +1,12 @@
+.responsive-market {
+    height: 350px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    margin-top: 2%;
+}
+@media (max-width: 768px) {
+    .responsive-market {
+        height: 230px;
+    }
+}

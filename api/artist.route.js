@@ -42,9 +42,10 @@ artistRoutes.route('/update/:id').post(function (req, res) {
     if (!artist)
       res.status(404).send("data is not found");
     else {
-        artist.person_name = req.body.person_name;
-        artist.artist_name = req.body.artist_name;
-        artist.artist_gst_number = req.body.artist_gst_number;
+        artist.name = req.body.name;
+        artist.Birth = req.body.Birth;
+        artist.followers = req.body.followers;
+        artist.Album = req.body.Album;
 
         artist.save().then(artist => {
           res.json('Update complete');
